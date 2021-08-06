@@ -10,7 +10,7 @@ import { IMAGES_URL } from '../../../config';
 import './Photo.scss';
 
 const Photo = ({ votePhoto, _id, src, title, author, votes}) => {
-  
+
   const isVoted = (id) => {
     const votes = JSON.parse(localStorage.getItem('votes')) || [];
     return (votes && votes.indexOf(id) !== -1);

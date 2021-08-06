@@ -5,7 +5,7 @@ import { Row, Col, Spinner } from 'reactstrap';
 import Photo from '../Photo/Photo';
 
 const Photos = ({ data, votePhoto, request }) => {
-  
+
   if(!request || !request.success) return <Spinner color="primary" className="standard-box d-block mr-auto ml-auto" /> 
   else return (
     <section className="">

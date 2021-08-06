@@ -8,4 +8,4 @@ const photoSchema = new mongoose.Schema({
   votes: { type: Number, required: true },
 });
 
-module.exports = mongoose.model('Photo', photoSchema);
+module.exports = mongoose.models.Photo || mongoose.model('Photo', photoSchema);
